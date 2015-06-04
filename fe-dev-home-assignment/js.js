@@ -1,1 +1,7 @@
-// you can enter your JS here!
+$(function(){
+	var reviewDs = new booking.StaticDataSource(function(){
+		return hotels[0].reviews;
+	});
+
+	var reviews = reviewDs.load();
+})
