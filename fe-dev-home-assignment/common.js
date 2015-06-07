@@ -40,10 +40,10 @@
         getComparer : function(type, desc){
             if(type == 'number')
             {
-                return module.numberComparer;
+                return this.numberComparer;
             }
 
-            return module.stringComparer;
+            return this.stringComparer;
         } 
     };    
 }(window.booking));
